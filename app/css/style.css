@@ -1,0 +1,206 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --white:  hsl(0, 0, 100%);
+    --p-blue: hsl(223, 100%, 88%);
+    --l-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --v-dark-blue: hsl(209, 33%, 12%);
+    --l-green: hsl(145, 84%, 59%);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    min-width: 375px;
+}
+
+.logo img {
+    margin-top: 84.5px;
+    height: 1.125rem;
+}
+
+.logo h1 {
+    font-size: 1.40rem;
+    margin-top: 2.15rem;
+}
+
+.logo span {
+    font-weight: normal;
+    color: var(--gray);
+}
+
+.subscribe {
+    height: 207px;
+}
+
+.subscribe h2 { 
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 1.10rem;
+    opacity: 0.8;
+}
+
+.form {
+    margin-top: 1.30rem;
+}
+
+.form-control input {
+    width: 300px;
+    padding: .70rem .70rem .70rem 2rem;
+    margin-top: .70rem;
+    border-radius: 30px;
+    color: var(--p-blue);
+    border: 1px solid var(--p-blue);
+    font-family: inherit;
+    font-size: 0.75rem;
+}
+
+.form-control.error input {
+    border: 1px solid var(--l-red);
+}
+
+.form-control.success input {
+    border: 1px solid var(--l-green);
+}
+
+.form-control input:focus {
+    outline: none;
+    color: var(--blue);
+}
+
+.form-control.error span {
+    color: var(--l-red);
+    font-size: 0.65rem;
+    font-style: italic;
+    display: block;
+    letter-spacing: 0.03rem;
+}
+
+.form-control.success span {
+    font: 0/0 a;
+    color: transparent;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form button  {
+    background-color: var(--blue);
+    color: #fff;
+    font-family: inherit;
+    border: var(--blue);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: .80rem;
+    width: 300px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+    border-radius: 30px;
+    border: 1px solid var(--blue);
+    margin-top: .60rem;
+}
+
+.form button:hover, .form button:focus, .form button:visited {
+    opacity: 0.7;
+    outline: none;
+    transition: 300ms ease-in;
+}
+
+.hero img {
+    height: 200px; 
+    width: 320px;
+    margin: /*4.40rem*/ 0 0 7.375rem 0;
+}
+
+.socials__links a {
+    display: inline-block;
+    margin: 0 0.8125rem 1rem 0;
+    height: 31px;
+    width: 31px;
+    color: var(--blue);
+    border: 1px solid var(--p-blue);
+    border-radius: 50%;
+}
+
+.socials__links a:hover {
+    color: #fff;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    transition: 300ms ease-in;
+}
+
+.socials span {
+    font-size: 10px;
+    color: var(--gray);
+}
+
+.m-error {
+    margin: 0.35rem 0 0.65rem 0;
+}
+
+@media (min-width: 650px) {
+
+    .logo img {
+        margin-top: 44px;
+    }
+
+    .logo h1 {
+        margin-top: 29px;
+        font-size: 43px;
+    }
+
+    .subscribe {
+        height: 140px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-control input {
+        width: 420px;
+        margin-right: 16px;
+    }
+
+    .form button {
+        width: 200px;
+        height: 42px;
+    }
+
+    .hero img {
+        width: 640px;
+        height: 383px;
+        margin: 0 0 60px 0;
+    }
+
+    .socials__links a {
+        margin: 0 0.8125rem 0.50rem 0;
+    }
+
+    .form-control.error span {
+        text-align: start;
+        padding-left: 2rem;
+    }
+}
+
